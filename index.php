@@ -5,9 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<style type="text/css">
-  
-</style>
+<link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
     <div id="center">

@@ -1,10 +1,38 @@
 @import "reset.css";
+@import url(http://fonts.googleapis.com/css?family=Cousine:700);
 
-body {
-    
-}
+body { background: #EEE; font-family: 'Cousine', sans-serif; }
+
+#center { width: 960px; margin: 0 auto; box-shadow: 0 0 10px #666; background: #FFF; }
+
+#header { background: url('../img/header.jpg') no-repeat; display: block; width: 100%; overflow: hidden; height: 340px; }
+#bg1 { background: url('../img/bg1.jpg') no-repeat; display: block; width: 100%; overflow: hidden; height: 30px; }
+#bg2 { background: url('../img/bg2.jpg') no-repeat; display: block; width: 100%; overflow: hidden; height: 30px; }
+#bg3 { background: url('../img/bg3.jpg') no-repeat; display: block; width: 100%; overflow: hidden; height: 30px; }
 
 
+
+
+#categoria { background: url('../img/faixa_azul.jpg') repeat-x; display: block; width: 100%; overflow: hidden; height: 67px; color: #FFF; font-size: 20px; }
+
+
+
+
+#estado { background: url('../img/faixa_azul.jpg') repeat-x; display: block; width: 100%; overflow: hidden; height: 67px; color: #FFF; font-size: 20px; }
+
+
+#hoteis { background: url('../img/bg_hoteis.jpg') repeat-y; }
+#hoteis h2 { background: url('../img/faixa_azul.jpg') repeat-x; display: block; width: 100%; overflow: hidden; height: 67px; color: #FFF; font-size: 22px; line-height:67px; text-align: center;}
+#hoteis ul { overflow: hidden; }
+#hoteis ul li { width: 230px; float: left; text-align: center; overflow: hidden; margin: 20px 44px;}
+#hoteis ul li p { width: 230px; color: #fff; font-size: 18px;padding: 5px 0;}
+#hoteis ul li img { border-radius: 5px; }
+
+
+#data { background: url('../img/faixa_azul.jpg') repeat-x; display: block; width: 100%; overflow: hidden; height: 67px; color: #FFF; font-size: 20px; }
+
+
+#footer { background: url('../img/footer.jpg') repeat-x; display: block; width: 100%; overflow: hidden; height: 274px; font-size: 20px;}
 /*
 header {
     position: fixed;

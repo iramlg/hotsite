@@ -2,6 +2,8 @@ $(document).ready(function(){
 
     // Montando a listagem dos estados de acordo com a categoria.
     $('input:radio[name=parametro1]').on('click', function(){
+
+        $("#lista_hoteis").fadeOut();
         
         var estados = mostraEstado($(this).val());
         var optionsEstados = "<option value=''>Selecione o estado</option>";
@@ -47,7 +49,7 @@ function mostraEstado(categoria) {
     ];
 
     // Tratando exceção
-    if(categoria == 'eventos') {
+    if(categoria == 'Espaço para Eventos') {
         var estados = [
             'Bahia', 
             'Distrito Federal', 
@@ -81,7 +83,7 @@ function mostraHoteis(categoria, estado_id) {
             {'nome': 'Golden Tulip Porto Vitória', 'cidade': 'Vitória', 'estado': 'ES', 'foto': 'es/GT_Porto_Vitoria.jpg'}
         ],
         [ // Goiás
-            {'nome': 'Address West Side', 'cidade': 'Goiânia', 'estado': 'GO', 'foto': ''}
+            {'nome': 'Address West Side', 'cidade': 'Goiânia', 'estado': 'GO', 'foto': 'go/Address_westside.jpg'}
         ],
         [ // Mato Grosso
             {'nome': 'Golden Tulip Pantanal', 'cidade': 'Cuiabá', 'estado': 'MT', 'foto': 'mt/GT_Pantanal.jpg'}
@@ -90,7 +92,7 @@ function mostraHoteis(categoria, estado_id) {
             {'nome': 'Tulip Inn Batista Campos', 'cidade': 'Belém', 'estado': 'PA', 'foto': 'pa/TI_Batista_Campos.jpg'},
             {'nome': 'Tulip Inn Nazaré', 'cidade': 'Belém', 'estado': 'PA', 'foto': 'pa/TI_Nazare.jpg'},
             {'nome': 'Golden Tulip Belém', 'cidade': 'Belém', 'estado': 'PA', 'foto': 'pa/GT_Belem.jpg'},
-            {'nome': 'Soft Inn Batista Campos', 'cidade': 'Belém', 'estado': 'PA', 'foto': ''}
+            {'nome': 'Soft Inn Batista Campos', 'cidade': 'Belém', 'estado': 'PA', 'foto': 'pa/softInn_Batista.jpg'}
         ],
         [ // Paraná
             {'nome': 'Tulip Inn Batel', 'cidade': 'Curitiba', 'estado': 'PR', 'foto': 'pr/TI_Batel.jpg'},
@@ -127,7 +129,7 @@ function mostraHoteis(categoria, estado_id) {
         ],
     ];
 
-    if(categoria == 'eventos') {
+    if(categoria == 'Espaço para Eventos') {
 
         var hoteis = [
             [ // Bahia

@@ -19,33 +19,72 @@
         <div id="bg1">
         </div>
         <div id="estado">
-        	<p>Escolha um estado</p>
-        	<form name="Menu">
-			 	<select id="slc_estado" name="slc_estado" size="1">
+                <p>Escolha um estado</p>
+                <form name="Menu">
+                                <select id="slc_estado" name="slc_estado" size="1">
                     <option value="">Selecione primeiro a categoria</option>
-			  	</select>
-			</form>
+                                </select>
+                        </form>
         </div>
         <div id="bg2">
         </div>
         <div id="hoteis">
-        	<ul>
-        		<li></li>
-        	</ul>
+            <h2>Escolha um Hotel</h2>
+                <ul>
+                    <li>
+                        <label for="gtrv1">
+                            <p>Salvador - BA</p>
+                            <img src="fotos/sp/grand_plaza.jpg">
+                            <p>Golden Tulip Rio Vermelho</p>
+                        </label>
+                        <input type="radio" name="hoteis" id="gtrv1">
+                    </li>
+                    <li>
+                        <label for="gtrv">
+                            <p>Salvador - BA</p>
+                            <img src="fotos/sp/grand_plaza.jpg">
+                            <p>Golden Tulip Rio Vermelho</p>
+                        </label>
+                        <input type="radio" name="hoteis" id="gtrv">
+                    </li>
+                    <li>
+                        <p>Salvador - BA</p>
+                        <img src="fotos/sp/grand_plaza.jpg">
+                        <p>Golden Tulip Rio Vermelho</p>
+                        <input type="radio" name="hoteis">
+                    </li>
+                    <li>
+                        <p>Salvador - BA</p>
+                        <img src="fotos/sp/grand_plaza.jpg">
+                        <p>Golden Tulip Rio Vermelho</p>
+                        <input type="radio" name="hoteis">
+                    </li>
+                </ul>
         </div>
         <div id="bg3">
         </div>
         <div id="data">
-        	<label>Escolha a data</laber>
-        	<input></input>
-        	<label>Noites</laber>
-        	<input></input>
+                <label for="parametro4">Escolha a data</laber>
+                <input type="text" name="parametro4" id="parametro4"></input>
+                <label for="parametro5">Noites</laber>
+                <input type="text" name="parametro5" id="parametro5"></input>
         </div>
         <div id="footer">
-        	<div>
-        		<label>Nome</label>
-        		<input></input>
-        	</div>
+                <div>
+                        <label for="nombre">Nome</label>
+                        <input type="text" name="nombre" id="nombre"></input>
+                </div>
+                <div>
+                        <label for="telefono">Fone</label>
+                        <input type="text" name="telefono" id="telefono"></input>
+                </div>
+                <div>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email"></input>
+                </div>
+                <div>
+                        <input type="submit" value="Enviar">
+                </div>
         </div>
         <input type="hidden" name="ID" id="ID" value="3013">
         <input type="hidden" name="UNIQUE_ID" id="UNIQUE_ID" value="GC156244f4795001a26c1.98049849">

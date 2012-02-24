@@ -22,9 +22,10 @@
             </div>
             <div id="estado">
                 <p>Escolha um estado</p>
-                    <select id="parametro2" name="parametro2" size="1">
+                    <select id="slc_estado" name="slc_estado" size="1">
                         <option value="">Selecione primeiro a categoria</option>
                     </select>
+                    <input type="hidden" name="parametro2" id="parametro2"></input>
             </div>
             <div id="bg2">
             </div>

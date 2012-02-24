@@ -35,16 +35,17 @@ $(document).ready(function(){
             optionsEstados += "<option value='"+estados[i]+"#"+i+"'>"+estados[i]+"</option>";
         }
 
-        $("#parametro2").html(optionsEstados);
+        $("#slc_estado").html(optionsEstados);
     });
 
     // Montando a listagem dos hóteis
-    $("#parametro2").change(function(){
+    $("#slc_estado").change(function(){
         var dataEstado = $(this).val().split("#");
+        $("#parametro2").val(dataEstado[0]);
         var hoteis = mostraHoteis($('input[name=parametro1]:radio:checked').val(), dataEstado[1]);
         var listaHoteis = "";
         for (var i=0; i < hoteis.length; ++i) {
-            listaHoteis += '<li><input type="radio" name="parametro3" id="gt'+i+'"><label for="gt'+i+'"><p>'+hoteis[i].cidade+' - '+hoteis[i].estado+'</p><img src="fotos/'+hoteis[i].foto+'"><p>'+hoteis[i].nome+'</p></label></li>';
+            listaHoteis += '<li><input type="radio" name="parametro3" id="gt'+i+'" value="'+hoteis[i].nome+'"><label for="gt'+i+'"><p>'+hoteis[i].cidade+' - '+hoteis[i].estado+'</p><img src="fotos/'+hoteis[i].foto+'"><p>'+hoteis[i].nome+'</p></label></li>';
         }
 
         $("#lista_hoteis").fadeOut(function(){

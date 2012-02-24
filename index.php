@@ -14,23 +14,18 @@
         <div id="header">
         </div>
         <div id="categoria">
-            <h2>Noite de núpcias</h2>
-            <h2>Lua de Mel</h2>
-            <h2>Espaço para Eventos</h2>
+            <input type="radio" name="categoria" value="nupcias">Noite de núpcias
+            <input type="radio" name="categoria" value="lua">Lua de Mel
+            <input type="radio" name="categoria" value="eventos">Espaço para Eventos
         </div>
         <div id="bg1">
         </div>
         <div id="estado">
         	<p>Escolha um estado</p>
         	<form name="Menu">
-			 	<select name="pages" size="1" onChange="vai(this);">
-			  		<option>1 - inclusao de Titular</option> 
-					<option>2 - Inclusao de Dependente</option> 
-					<option>3 - Exclusao de Titular</option> 
-					<option>4 - Exclusao de Dependente</option> 
-					<option>5 - Solicitacao de 2 via</option> 
-					<option>8 - Alteracao de Dados</option> 
-			 	</select>
+			 	<select id="slc_estado" name="slc_estado" size="1">
+                    <option value="">Selecione primeiro a categoria</option>
+			  	</select>
 			</form>
         </div>
         <div id="bg2">
@@ -57,9 +52,5 @@
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-<script>
-
-</script>
-
+<script type="text/javascript" src="js/script.js"></script>
 </html>

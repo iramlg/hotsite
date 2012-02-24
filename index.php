@@ -7,6 +7,7 @@
 <meta name="description" content="" />
 <link href="css/style.css" rel="stylesheet" />
 <link href="js/jquery-ui-1.8.18.custom/css/redmond/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
+<link href="css/jquery.alerts.css" rel="stylesheet" />
 </head>
 <body>
     <div id="center">
@@ -66,8 +67,8 @@
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="js/masked_input_plugin.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.8.18.custom/js/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.alerts.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </html>

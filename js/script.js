@@ -53,30 +53,34 @@ $(document).ready(function(){
         });
     });
 
-    $('#form_hotel').validate({
-        rules: { 
-            parametro1: { required: true},
-            parametro2: { required: true},
-            parametro3: { required: true},
-            parametro4: { required: true},
-            parametro5: { required: true},
-            nombre: { required: true},
-            telefono: { required: true},
-            email: { required: true, email: true}
-        }, messages: {
-            parametro1: "O campo Categoria é obrigatório.",
-            parametro2: "O campo Estado é obrigatório.",
-            parametro3: "Selecione 1 hotel.",
-            parametro4: "O campo Data é obrigatório.",
-            parametro5: "O campo Noites é obrigatório",
-            nombre: "Informe um nome.",
-            telefono: "Informe um telefone.",
-            email: "Informe um e-mail válido.",
-
-        },
-        submitHandler: function(form) {
-            $("#form_hotel").submit();
+    $("#btn_hotel").click(function(){
+        
+        var preenchidos = 1;
+        if (!$('input[name=parametro1]').is(':checked') ) { 
+            preenchidos = 0;
         }
+
+        if (!$('input[name=parametro3]').is(':checked') ) { 
+            preenchidos = 0;
+        }
+
+        $("input[type=text],select").each(function(){
+            if($(this).val() == "") {
+                preenchidos = 0;
+            }
+        });
+
+        if(preenchidos == 0){
+            jAlert('Todos os campos são obrigatórios.', 'Golden Tulip');
+            return false;
+        } else {
+            if(!validaEmail($("#email").val())) {
+                jAlert('Informe um email válido.', 'Golden Tulip');
+                return false;
+            } 
+        }
+        
+
     });
 
 });
@@ -163,7 +167,7 @@ function mostraHoteis(categoria, estado_id) {
             {'nome': 'Royal Tulip Rio de Janeiro', 'cidade': 'Rio de Janeiro', 'estado': 'RJ', 'foto': 'rj/RT_Rio.jpg'}
         ],
         [ // Rio Grande do Norte
-            {'nome': 'Golden Tulip Interatlântico', 'cidade': 'Natal', 'estado': 'RN', 'foto': 'rn/GT_interatlantico.jpg'}
+            {'nome': 'Golden Tulip Interatlântico', 'cidade': 'Natal', 'estado': 'RN', 'foto': 'rn/GT_interatlatico.jpg'}
         ],
         [ // Rio Grande do Sul
             {'nome': 'Tulip Inn Centro Histórico', 'cidade': 'Porto Alegre', 'estado': 'RS', 'foto': 'rs/TI_Centro_Historico.jpg'}
@@ -208,5 +212,14 @@ function mostraHoteis(categoria, estado_id) {
     }
 
     return hoteis[estado_id];
-    
+}
+
+function validaEmail(email){
+
+    var filter = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
+    if(filter.test(email)) {
+        return true;
+    } else {
+        return false;
+    }
 }

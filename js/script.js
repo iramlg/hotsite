@@ -1,5 +1,29 @@
 $(document).ready(function(){
 
+    // Setando configuração do datepicker para pt-BR
+    $.datepicker.regional['pt'] = {
+        closeText: 'Fechar',
+        prevText: '&#x3c;Anterior',
+        nextText: 'Seguinte',
+        currentText: 'Hoje',
+        monthNames: ['Janeiro','Fevereiro','Mar&ccedil;o','Abril','Maio','Junho',
+        'Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+        monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun',
+        'Jul','Ago','Set','Out','Nov','Dez'],
+        dayNames: ['Domingo','Segunda-feira','Ter&ccedil;a-feira','Quarta-feira','Quinta-feira','Sexta-feira','S&aacute;bado'],
+        dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','S&aacute;b'],
+        dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','S&aacute;b'],
+        weekHeader: 'Sem',
+        dateFormat: 'dd/mm/yy',
+        firstDay: 0,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: ''};
+    $.datepicker.setDefaults($.datepicker.regional['pt']);
+
+    $("#telefono").mask("(99) 9999-9999");
+    $("#parametro4").datepicker();
+
     // Montando a listagem dos estados de acordo com a categoria.
     $('input:radio[name=parametro1]').on('click', function(){
 
@@ -26,6 +50,32 @@ $(document).ready(function(){
         $("#lista_hoteis").fadeOut(function(){
             $(this).html(listaHoteis).fadeIn();
         });
+    });
+
+    $('#form_hotel').validate({
+        rules: { 
+            parametro1: { required: true},
+            parametro2: { required: true},
+            parametro3: { required: true},
+            parametro4: { required: true},
+            parametro5: { required: true},
+            nombre: { required: true},
+            telefono: { required: true},
+            email: { required: true, email: true}
+        }, messages: {
+            parametro1: "O campo Categoria é obrigatório.",
+            parametro2: "O campo Estado é obrigatório.",
+            parametro3: "Selecione 1 hotel.",
+            parametro4: "O campo Data é obrigatório.",
+            parametro5: "O campo Noites é obrigatório",
+            nombre: "Informe um nome.",
+            telefono: "Informe um telefone.",
+            email: "Informe um e-mail válido.",
+
+        },
+        submitHandler: function(form) {
+            $("#form_hotel").submit();
+        }
     });
 
 });

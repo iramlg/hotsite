@@ -6,12 +6,13 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="css/style.css" rel="stylesheet" />
+<link href="js/jquery-ui-1.8.18.custom/css/redmond/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
 </head>
 <body>
     <div id="center">
         <div id="header">
         </div>
-        <form>
+        <form id="form_hotel" name="form_hotel" method="post" action="http://www.bodaclick.com/grandes_cuentas/insert.php">
             <div id="categoria">
                 <input type="radio" name="parametro1" value="Noite de núpcias" id="nupcias"><label for="nupcias" class="cat1">Noite de núpcias</label>
                 <input type="radio" name="parametro1" value="Lua de Mel" id="lua"><label for="lua">Lua de Mel</label>
@@ -55,14 +56,17 @@
                             <input type="text" name="email" id="email"></input>
                     </div>
                     <div class="env">
-                            <input type="submit" value="Enviar">
+                            <input type="hidden" name="ID" id="ID" value="3013">
+                            <input type="hidden" name="UNIQUE_ID" id="UNIQUE_ID" value="GC156244f4795001a26c1.98049849">
+                            <input type="submit" id="btn_hotel" name="btn_hotel" value="Enviar">
                     </div>
             </div>
-            <input type="hidden" name="ID" id="ID" value="3013">
-            <input type="hidden" name="UNIQUE_ID" id="UNIQUE_ID" value="GC156244f4795001a26c1.98049849">
         </form>
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/masked_input_plugin.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.18.custom/js/jquery-ui-1.8.18.custom.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </html>

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     // Montando a listagem dos estados de acordo com a categoria.
-    $('input:radio[name=categoria]').on('click', function(){
+    $('input:radio[name=parametro1]').on('click', function(){
         
         var estados = mostraEstado($(this).val());
         var optionsEstados = "<option value=''>Selecione o estado</option>";
@@ -9,16 +9,21 @@ $(document).ready(function(){
             optionsEstados += "<option value='"+estados[i]+"#"+i+"'>"+estados[i]+"</option>";
         }
 
-        $("#slc_estado").html(optionsEstados);
+        $("#parametro2").html(optionsEstados);
     });
 
     // Montando a listagem dos hóteis
-    $("#slc_estado").change(function(){
+    $("#parametro2").change(function(){
         var dataEstado = $(this).val().split("#");
-        var hoteis = mostraHoteis($('input:radio[name=categoria]').val(), dataEstado[1]);
-        /*for (var i=0; i < hoteis.length; ++i) {
-            console.log(hoteis[i].nome);
-        }*/
+        var hoteis = mostraHoteis($('input[name=parametro1]:radio:checked').val(), dataEstado[1]);
+        var listaHoteis = "";
+        for (var i=0; i < hoteis.length; ++i) {
+            listaHoteis += '<li><label for="gt'+i+'"><p>'+hoteis[i].cidade+' - '+hoteis[i].estado+'</p><img src="fotos/'+hoteis[i].foto+'"><p>'+hoteis[i].nome+'</p></label><input type="radio" name="parametro3" id="gt'+i+'"></li>';
+        }
+
+        $("#lista_hoteis").fadeOut(function(){
+            $(this).html(listaHoteis).fadeIn();
+        });
     });
 
 });
@@ -121,8 +126,9 @@ function mostraHoteis(categoria, estado_id) {
             {'nome': 'Hampton Park', 'cidade': 'São Paulo', 'estado': 'SP', 'foto': 'sp/Hampton.jpg'}
         ],
     ];
-    
+
     if(categoria == 'eventos') {
+
         var hoteis = [
             [ // Bahia
                 {'nome': 'Golden Tulip Rio Vermelho', 'cidade': 'Salvador', 'estado': 'BA', 'foto': 'ba/GT_Rio_Vermelho.jpg'},

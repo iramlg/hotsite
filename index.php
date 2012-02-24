@@ -12,53 +12,26 @@
         <div id="header">
         </div>
         <div id="categoria">
-            <input type="radio" name="categoria" value="nupcias">Noite de núpcias
-            <input type="radio" name="categoria" value="lua">Lua de Mel
-            <input type="radio" name="categoria" value="eventos">Espaço para Eventos
+            <input type="radio" name="parametro1" value="nupcias">Noite de núpcias
+            <input type="radio" name="parametro1" value="lua">Lua de Mel
+            <input type="radio" name="parametro1" value="eventos">Espaço para Eventos
         </div>
         <div id="bg1">
         </div>
         <div id="estado">
-                <p>Escolha um estado</p>
-                <form name="Menu">
-                                <select id="slc_estado" name="slc_estado" size="1">
+            <p>Escolha um estado</p>
+            <form name="Menu">
+                <select id="parametro2" name="parametro2" size="1">
                     <option value="">Selecione primeiro a categoria</option>
-                                </select>
-                        </form>
+                </select>
+            </form>
         </div>
         <div id="bg2">
         </div>
         <div id="hoteis">
             <h2>Escolha um Hotel</h2>
-                <ul>
-                    <li>
-                        <label for="gtrv1">
-                            <p>Salvador - BA</p>
-                            <img src="fotos/sp/grand_plaza.jpg">
-                            <p>Golden Tulip Rio Vermelho</p>
-                        </label>
-                        <input type="radio" name="hoteis" id="gtrv1">
-                    </li>
-                    <li>
-                        <label for="gtrv">
-                            <p>Salvador - BA</p>
-                            <img src="fotos/sp/grand_plaza.jpg">
-                            <p>Golden Tulip Rio Vermelho</p>
-                        </label>
-                        <input type="radio" name="hoteis" id="gtrv">
-                    </li>
-                    <li>
-                        <p>Salvador - BA</p>
-                        <img src="fotos/sp/grand_plaza.jpg">
-                        <p>Golden Tulip Rio Vermelho</p>
-                        <input type="radio" name="hoteis">
-                    </li>
-                    <li>
-                        <p>Salvador - BA</p>
-                        <img src="fotos/sp/grand_plaza.jpg">
-                        <p>Golden Tulip Rio Vermelho</p>
-                        <input type="radio" name="hoteis">
-                    </li>
+                <ul id="lista_hoteis">
+                    
                 </ul>
         </div>
         <div id="bg3">

@@ -18,7 +18,7 @@ $(document).ready(function(){
         var hoteis = mostraHoteis($('input[name=parametro1]:radio:checked').val(), dataEstado[1]);
         var listaHoteis = "";
         for (var i=0; i < hoteis.length; ++i) {
-            listaHoteis += '<li><label for="gt'+i+'"><p>'+hoteis[i].cidade+' - '+hoteis[i].estado+'</p><img src="fotos/'+hoteis[i].foto+'"><p>'+hoteis[i].nome+'</p></label><input type="radio" name="parametro3" id="gt'+i+'"></li>';
+            listaHoteis += '<li><input type="radio" name="parametro3" id="gt'+i+'"><label for="gt'+i+'"><p>'+hoteis[i].cidade+' - '+hoteis[i].estado+'</p><img src="fotos/'+hoteis[i].foto+'"><p>'+hoteis[i].nome+'</p></label></li>';
         }
 
         $("#lista_hoteis").fadeOut(function(){

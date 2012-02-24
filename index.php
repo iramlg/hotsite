@@ -12,9 +12,9 @@
         <div id="header">
         </div>
         <div id="categoria">
-            <input type="radio" name="parametro1" value="nupcias">Noite de núpcias
-            <input type="radio" name="parametro1" value="lua">Lua de Mel
-            <input type="radio" name="parametro1" value="eventos">Espaço para Eventos
+            <input type="radio" name="parametro1" value="nupcias" id="nupcias"><label for="nupcias" class="cat1">Noite de núpcias</label>
+            <input type="radio" name="parametro1" value="lua" id="lua"><label for="lua">Lua de Mel</label>
+            <input type="radio" name="parametro1" value="eventos" id="eventos"><label for="eventos" class="cat3">Espaço para Eventos</label>
         </div>
         <div id="bg1">
         </div>
@@ -37,25 +37,25 @@
         <div id="bg3">
         </div>
         <div id="data">
-                <label for="parametro4">Escolha a data</laber>
+                <label for="parametro4">Escolha a data</label>
                 <input type="text" name="parametro4" id="parametro4"></input>
-                <label for="parametro5">Noites</laber>
+                <label for="parametro5">Noites</label>
                 <input type="text" name="parametro5" id="parametro5"></input>
         </div>
         <div id="footer">
-                <div>
+                <div class="for">
                         <label for="nombre">Nome</label>
                         <input type="text" name="nombre" id="nombre"></input>
                 </div>
-                <div>
+                <div class="for">
                         <label for="telefono">Fone</label>
                         <input type="text" name="telefono" id="telefono"></input>
                 </div>
-                <div>
+                <div class="for">
                         <label for="email">Email</label>
                         <input type="text" name="email" id="email"></input>
                 </div>
-                <div>
+                <div class="env">
                         <input type="submit" value="Enviar">
                 </div>
         </div>

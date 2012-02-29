@@ -60,6 +60,7 @@
                     <div class="env">
                             <input type="hidden" name="ID" id="ID" value="3013">
                             <input type="hidden" name="UNIQUE_ID" id="UNIQUE_ID" value="GC156244f4795001a26c1.98049849">
+                            <input type="hidden" name="retorno" id="retorno" value="index.php">
                             <input type="submit" id="btn_hotel" name="btn_hotel" value="Enviar">
                     </div>
             </div>

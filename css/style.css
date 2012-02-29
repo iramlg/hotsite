@@ -1,23 +1,23 @@
 @import "reset.css";
 @import url(http://fonts.googleapis.com/css?family=Cousine:700);
 
-body { background: #EEE; font-family: 'Cousine', sans-serif; }
+body { background: #FFF; font-family: 'Cousine', sans-serif; height: 1862px; }
 
-#center { width: 960px; margin: 0 auto; box-shadow: 0 0 10px #666; background: #FFF; }
+#center { width: 920px; margin: 0 auto; background: #FFF; }
 
 #header { background: url('../img/header.jpg') no-repeat; display: block; width: 100%; overflow: hidden; height: 340px; }
 #bg1 { background: url('../img/bg1.jpg') no-repeat; display: block; width: 100%; overflow: hidden; height: 30px; }
 #bg2 { background: url('../img/bg2.jpg') no-repeat; display: block; width: 100%; overflow: hidden; height: 30px; }
 #bg3 { background: url('../img/bg3.jpg') no-repeat; display: block; width: 100%; overflow: hidden; height: 30px; }
 
-
+#center label.error { position: relative; display: block; float: none; }
 
 
 #categoria { background: url('../img/faixa_azul.jpg') repeat-x; display: block; width: 100%; overflow: hidden; height: 67px; color: #FFF; font-size: 20px; }
 #categoria label { cursor: pointer; background: url('../img/sprite.png') no-repeat 130px 1px; width: 170px; display: block; float: left; padding: 12px 0 8px; margin: 13px 5px;}
 #categoria input[type=radio]:checked + label { background: url('../img/sprite.png') no-repeat 130px -48px; color: #8DA8F8; }
-#categoria label.cat1 { width: 250px; background: url('../img/sprite.png') no-repeat 200px 1px; margin: 13px 60px;}
-#categoria label.cat3 { width: 280px;background: url('../img/sprite.png') no-repeat 235px 1px; margin: 13px 60px;}
+#categoria label.cat1 { width: 250px; background: url('../img/sprite.png') no-repeat 200px 1px; margin: 13px 50px;}
+#categoria label.cat3 { width: 280px;background: url('../img/sprite.png') no-repeat 235px 1px; margin: 13px 50px;}
 #categoria input[type=radio]:checked + label.cat1 { background: url('../img/sprite.png') no-repeat 200px -48px; color: #8DA8F8; }
 #categoria input[type=radio]:checked + label.cat3 { background: url('../img/sprite.png') no-repeat 235px -48px; color: #8DA8F8; }
 #categoria input { display: none; }
@@ -32,21 +32,22 @@ body { background: #EEE; font-family: 'Cousine', sans-serif; }
 #hoteis { background: url('../img/bg_hoteis.jpg') repeat-y; }
 #hoteis h2 { background: url('../img/faixa_azul.jpg') repeat-x; display: block; width: 100%; overflow: hidden; height: 67px; color: #FFF; font-size: 22px; line-height:67px; text-align: center;}
 #hoteis ul { overflow: hidden; }
-#hoteis ul li { width: 230px; height: 290px; float: left; text-align: center; overflow: hidden; margin: 20px 44px;}
-#hoteis ul li label { color: #8DA8F8; cursor: pointer; }
+#hoteis ul li { width: 230px; height: 290px; float: left; text-align: center; overflow: hidden; margin: 20px 37px;}
+#hoteis ul li label { color: #a0b7f9 ; cursor: pointer; }
 #hoteis ul li p { width: 230px; font-size: 18px; padding: 5px 0; line-height: 24px;}
-#hoteis ul li img { border-radius: 10px; opacity: 0.5; }
+#hoteis ul li img { border-radius: 10px; opacity: 0.4; }
 #hoteis ul li input[type="radio"] { display: none; }
 #hoteis ul li input[type=radio]:checked + label { color: #FFF; cursor: default;}
 #hoteis ul li input[type=radio]:checked + label img { opacity: 1; }
 
 
-#data { background: url('../img/faixa_azul.jpg') repeat-x; display: block; width: 700px; overflow: hidden; height: 67px; color: #FFF; font-size: 20px; padding: 0 130px; }
+#data { background: url('../img/faixa_azul.jpg') repeat-x; display: block; width: 700px; overflow: hidden; height: 67px; color: #FFF; font-size: 20px; padding: 0 110px; }
 #data label { margin: 20px 0 20px 80px; display: block; float: left; }
+#data input#parametro4 { width: 70px; }
 #data input { margin: 18px 30px; display: block; float: left; width: 50px; border-radius: 5px; border: 0; padding: 5px; text-align: center;}
 
 
-#footer { background: url('../img/footer.jpg') repeat-x; display: block; width: 760px; overflow: hidden; height: 224px; font-size: 20px; padding: 50px 100px 0;}
+#footer { background: url('../img/footer.jpg') repeat-x; display: block; width: 760px; overflow: hidden; height: 224px; font-size: 20px; padding: 50px 80px 0;}
 #footer div.for { width: 330px; background: #EFEFEF; padding: 5px 10px; border-radius: 10px; box-shadow: 2px -2px 2px #999; border: 1px solid #CCC; float: left; margin: 10px;}
 #footer div.for label { color: #999; width: 65px; border-right: 2px solid #999; font-size: 18px; display: block; float: left; line-height: 23px; }
 #footer div.for input { width: 240px; background: #EFEFEF; float: left; border: none; font-size: 17px; display: block; margin-left: 10px;}

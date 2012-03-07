@@ -1,7 +1,19 @@
 @import "reset.css";
-@import url(http://fonts.googleapis.com/css?family=Cousine:700);
 
-body { background: #FFF; font-family: 'Cousine', sans-serif; height: 1862px; }
+
+@font-face {
+    font-family: "gothammedium";
+    src: url("gotham-medium.ttf"); 
+    src: url("gotham-medium.ttf") format("truetype"); 
+}
+@font-face {
+    font-family: "gothambook";
+    src: url("gotham-book.ttf"); 
+    src: url("gotham-book.ttf") format("truetype");  
+}
+
+
+body { background: #FFF; font-family: 'gothammedium', arial; height: 1862px; }
 
 #center { width: 920px; margin: 0 auto; background: #FFF; }
 
@@ -32,7 +44,7 @@ body { background: #FFF; font-family: 'Cousine', sans-serif; height: 1862px; }
 #hoteis { background: url('../img/bg_hoteis.jpg') repeat-y; }
 #hoteis h2 { background: url('../img/faixa_azul.jpg') repeat-x; display: block; width: 100%; overflow: hidden; height: 67px; color: #FFF; font-size: 22px; line-height:67px; text-align: center;}
 #hoteis ul { overflow: hidden; }
-#hoteis ul li { width: 230px; height: 290px; float: left; text-align: center; overflow: hidden; margin: 20px 37px;}
+#hoteis ul li { width: 230px; height: 290px; float: left; text-align: center; overflow: hidden; margin: 20px 37px;font-family: 'gothambook', arial;}
 #hoteis ul li label { color: #a0b7f9 ; cursor: pointer; }
 #hoteis ul li p { width: 230px; font-size: 18px; padding: 5px 0; line-height: 24px;}
 #hoteis ul li img { border-radius: 10px; opacity: 0.4; }

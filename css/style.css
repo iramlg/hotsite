@@ -27,12 +27,12 @@ body { background: #FFF; font-family: 'gothammedium', arial; height: 1862px; }
 
 #categoria { background: url('../img/faixa_azul.jpg') repeat-x; display: block; width: 100%; overflow: hidden; height: 67px; color: #FFF; font-size: 20px; }
 #categoria label { cursor: pointer; background: url('../img/sprite.png') no-repeat 130px 1px; width: 170px; display: block; float: left; padding: 12px 0 8px; margin: 13px 5px;}
-#categoria input[type=radio]:checked + label { background: url('../img/sprite.png') no-repeat 130px -48px; color: #8DA8F8; }
 #categoria label.cat1 { width: 250px; background: url('../img/sprite.png') no-repeat 200px 1px; margin: 13px 50px;}
 #categoria label.cat3 { width: 280px;background: url('../img/sprite.png') no-repeat 235px 1px; margin: 13px 50px;}
-#categoria input[type=radio]:checked + label.cat1 { background: url('../img/sprite.png') no-repeat 200px -48px; color: #8DA8F8; }
-#categoria input[type=radio]:checked + label.cat3 { background: url('../img/sprite.png') no-repeat 235px -48px; color: #8DA8F8; }
-#categoria input { display: none; }
+#categoria label.checked { background: url('../img/sprite.png') no-repeat 130px -48px; color: #8DA8F8; }
+#categoria label.cat1.checked { background: url('../img/sprite.png') no-repeat 200px -48px; color: #8DA8F8; }
+#categoria label.cat3.checked { background: url('../img/sprite.png') no-repeat 235px -48px; color: #8DA8F8; }
+#categoria input { position: fixed; top: -400px; }
 
 
 
@@ -48,9 +48,9 @@ body { background: #FFF; font-family: 'gothammedium', arial; height: 1862px; }
 #hoteis ul li label { color: #a0b7f9 ; cursor: pointer; }
 #hoteis ul li p { width: 230px; font-size: 18px; padding: 5px 0; line-height: 24px;}
 #hoteis ul li img { border-radius: 10px; opacity: 0.4; }
-#hoteis ul li input[type="radio"] { display: none; }
-#hoteis ul li input[type=radio]:checked + label { color: #FFF; cursor: default;}
-#hoteis ul li input[type=radio]:checked + label img { opacity: 1; }
+#hoteis ul li input[type="radio"] { position: fixed; top: -400px;  }
+#hoteis ul li label.checked { color: #FFF; cursor: default;}
+#hoteis ul li label.checked img { opacity: 1; }
 
 
 #data { background: url('../img/faixa_azul.jpg') repeat-x; display: block; width: 700px; overflow: hidden; height: 67px; color: #FFF; font-size: 20px; padding: 0 110px; }

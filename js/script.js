@@ -1,4 +1,15 @@
 $(document).ready(function(){
+    
+    //fix para ie8
+
+    $('#categoria label').live('click', function(){
+        $('#categoria label').removeClass('checked');
+        $(this).addClass('checked');
+    });
+    $('#hoteis label').live('click', function(){
+        $('#hoteis label').removeClass('checked');
+        $(this).addClass('checked');
+    });
 
     // Setando configuração do datepicker para pt-BR
     $.datepicker.regional['pt'] = {

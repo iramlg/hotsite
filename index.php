@@ -15,7 +15,7 @@
         </div>
         <form id="form_hotel" name="form_hotel" method="post" action="http://www.bodaclick.com/grandes_cuentas/insert.php">
             <div id="categoria">
-                <input type="radio" name="parametro1" value="Noite de núpcias" id="nupcias"><label for="nupcias" class="cat1">Noite de núpcias</label>
+                <input type="radio" name="parametro1" value="Noite de núpcias" id="nupcias"><label for="nupcias" class="cat1">Noite de Núpcias</label>
                 <input type="radio" name="parametro1" value="Lua de Mel" id="lua"><label for="lua">Lua de Mel</label>
                 <input type="radio" name="parametro1" value="Espaço para Eventos" id="eventos"><label for="eventos" class="cat3">Espaço para Eventos</label>
             </div>

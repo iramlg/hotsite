@@ -139,7 +139,8 @@ function mostraHoteis(categoria, estado_id) {
         ],
         [ // Ceará
             {'nome': 'Golden Tulip Iate Plaza', 'cidade': 'Fortaleza', 'estado': 'CE', 'foto': 'ce/GT_Iate_Plaza.jpg'},
-            {'nome': 'Tulip Inn Saint Martin', 'cidade': 'Fortaleza', 'estado': 'CE', 'foto': 'ce/TI_Saint_Martin.jpg' }
+            {'nome': 'Tulip Inn Saint Martin', 'cidade': 'Fortaleza', 'estado': 'CE', 'foto': 'ce/TI_Saint_Martin.jpg' },
+            {'nome': 'Praia Mansa Suite Hotel', 'cidade': 'Fortaleza', 'estado': 'CE', 'foto': 'ce/Praia_Mansa.jpg' }
         ],
         [ // Distrito Federal
             {'nome': 'Royal Tulip Brasília Alvorada', 'cidade': 'Brasília', 'estado': 'DF', 'foto': 'df/RT_Brasilia.jpg'},

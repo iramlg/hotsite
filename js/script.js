@@ -200,10 +200,10 @@ function mostraHoteis(categoria, estado_id) {
 
         var hoteis = [
             [ // Bahia
-                {'nome': 'Golden Tulip Rio Vermelho', 'cidade': 'Salvador', 'estado': 'BA', 'foto': 'ba/GT_Rio_Vermelho.jpg'},
+                {'nome': 'Golden Tulip Rio Vermelho', 'cidade': 'Salvador', 'estado': 'BA', 'foto': 'ba/GT_Rio_Vermelho.jpg'}
             ],
             [ // Distrito Federal
-                {'nome': 'Royal Tulip Brasília Alvorada', 'cidade': 'Brasília', 'estado': 'DF', 'foto': 'df/RT_Brasilia.jpg'},
+                {'nome': 'Royal Tulip Brasília Alvorada', 'cidade': 'Brasília', 'estado': 'DF', 'foto': 'df/RT_Brasilia.jpg'}
             ],
             [ // Espírito Santo
                 {'nome': 'Golden Tulip Porto Vitória', 'cidade': 'Vitória', 'estado': 'ES', 'foto': 'es/GT_Porto_Vitoria.jpg'}
@@ -218,7 +218,7 @@ function mostraHoteis(categoria, estado_id) {
                 {'nome': 'Royal Tulip Rio de Janeiro', 'cidade': 'Rio de Janeiro', 'estado': 'RJ', 'foto': 'rj/RT_Rio.jpg'}
             ],
             [ // São Paulo
-                {'nome': 'Golden Tulip Paulista Plaza', 'cidade': 'São Paulo', 'estado': 'SP', 'foto': 'sp/GT_Paulista_Convention.jpg'},
+                {'nome': 'Golden Tulip Paulista Plaza', 'cidade': 'São Paulo', 'estado': 'SP', 'foto': 'sp/GT_Paulista_Convention.jpg'}
             ],
         ];
     }

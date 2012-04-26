@@ -104,6 +104,7 @@ function mostraEstado(categoria) {
         'Distrito Federal', 
         'Espírito Santo', 
         'Goiás', 
+        'Maranhão', 
         'Mato Grosso', 
         'Pará',
         'Paraná', 
@@ -151,6 +152,10 @@ function mostraHoteis(categoria, estado_id) {
         ],
         [ // Goiás
             {'nome': 'Address West Side', 'cidade': 'Goiânia', 'estado': 'GO', 'foto': 'go/Address_westside.jpg'}
+        ],
+        [ // Maranhão
+            {'nome': 'Gran Solare Lençóis Resort', 'cidade': 'Barreirinhas', 'estado': 'MA', 'foto': 'ma/lençois.jpg'},
+            {'nome': 'Solare Praiabella Hotel', 'cidade': 'São Luís', 'estado': 'MA', 'foto': 'ma/praiabella.jpg'}
         ],
         [ // Mato Grosso
             {'nome': 'Golden Tulip Pantanal', 'cidade': 'Cuiabá', 'estado': 'MT', 'foto': 'mt/GT_Pantanal.jpg'}
